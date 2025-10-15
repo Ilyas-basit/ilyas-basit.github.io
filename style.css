@@ -1,0 +1,249 @@
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: #0d1321;
+    background-color: #f1faee;
+    line-height: 1.6;
+    text-align: center;
+}
+
+hr{
+  margin: 20px auto;  
+  border: none;        
+  height: 2px;       
+  background-color: #ccc;
+  border-radius: 2px;  
+}
+
+.navbar {
+    align-items: center;
+    padding: 20px 10%;
+    background: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.navbar.scrolled {
+    transition: 0.5s;
+    color: #1D3557;
+    background-color: #F1FAEE;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 600;
+  display:block;
+}
+
+.logo {
+    letter-spacing: -3px;
+}
+
+.navbar ul {
+    list-style: none;
+    display:flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #F1FAEE;
+}
+
+.navbar.scrolled ul li a {
+    color: #1D3557;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 3px solid #1D3557;
+    transition: 0.1s;
+}
+
+ol {
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.all-buttons {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #1D3557;
+    font-family: "poppins";
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.all-buttons:hover{
+    background-color: #457B9D;
+}
+
+.intro{
+    height: 100vh;
+    background-image: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url('image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #F1FAEE;
+    padding: 20px 10%;
+
+    }
+
+.FirstPage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10%;
+
+}
+
+.FirstPage h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.FirstPage h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #f1faee;
+}
+.FirstPage h3 {
+  font-size: 18px;
+  color: #a8dadc;
+  margin-bottom: 25px;
+}
+.biblio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; 
+    padding: 80px 10%;
+    background: #f1faee;
+    height: 90vh;
+}
+#biblio-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+
+}
+#biblio-text h3 {
+    color: #6c757d;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#biblio-text h3 a {
+    color: #6c757d;
+}
+#biblio-text h2 {
+    color: #1d3557;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+    line-height: 25px;
+}
+#biblio-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+#biblio-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#biblio-text ul li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+#biblio-text hr {
+  border: none;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 20px 0;
+}
+#biblio-text h3:last-of-type {
+  margin-top: 30px;
+}
+
+#biblio-text .all-buttons {
+  margin: 10px 10px 0 0;
+}
+#biblio-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+#biblio-img img {
+    width: 50%;
+    height: 50vh;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.info-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px; 
+  justify-items: start;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px; 
+}
+
+.info-list li {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.Buttom {
+    height: 60vh;
+    display: flex;
+    background-color: #1D3557;
+    color: #F1FAEE;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10%;
+
+}
