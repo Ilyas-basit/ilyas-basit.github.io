@@ -165,9 +165,10 @@ body {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.05s ease;
 }
 
 .contact-form button:hover {
   transform: translateY(-1.6px);
 }
+
