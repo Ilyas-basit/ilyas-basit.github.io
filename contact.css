@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(180deg, #F1FAEE 0%, #E8F3F1 50%, #F1FAEE 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.navbar nav ul li a {
+  color: #1D3557;
+}
+
+.navbar nav ul li a::after {
+  background-color: #457B9D;
+}
+
+section {
+  height: 100vh;
+  padding: 10%;
+}
+
+.lien ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.lien ol li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1D3557;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.lien ol li a:hover {
+  color: #E63946;
+  transform: scale(1.1);
+}
+
+.ByGmail {
+  background: #F1FAEE;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ByGmail h1 {
+  text-align: center;
+  font-weight: bold;
+  word-spacing: -3px;
+  color: #1D3557;
+  margin-bottom: 20px;
+}
+
+.ByGmail input,
+.ByGmail textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+}
+
+.ByGmail button {
+  background-color: #1D3557;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ByGmail button:hover {
+  background-color: #457B9D;
+}
