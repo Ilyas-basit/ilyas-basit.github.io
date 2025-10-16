@@ -14,14 +14,14 @@
 <body>
     <section class="intro">
         <header class="navbar">
-            <h1 class="logo">Ilyasse.BASIT</h1>
+            <h1 class="logo">Ilyasse.BASIT</h1></a>
             <nav>
                 <ul>
-                    <li><a href="#" ><i class="fa-solid fa-house"></i>  Home</a></li>
-                    <li><a href="#"><i class="fa-regular fa-address-card"></i>  About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-school"></i>  Education</a></li>
+                    <li><a href="index.html" ><i class="fa-solid fa-house"></i>  Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="education.html"><i class="fa-solid fa-school"></i>  Education</a></li>
                     <li><a href="#"><i class="fa-solid fa-hammer"></i>  Skills</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>  Contact</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-phone"></i>  Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,8 +55,8 @@
                 <a href=""><i class="fab fa-instagram"></i></a>
             </h3>
             
-            <button class="all-buttons">Hire me</button>
-            <button class="all-buttons">Download CV</button>
+            <button style="background-color: #457B9D; font-weight: 600;" class="all-buttons">Hire me</button>
+            <button style="background-color: #E63946; font-weight: 600;" class="all-buttons">Download CV</button>
         </div>
         <div id="biblio-img"><img src="image.jpg" alt=""></div>
     </section>
@@ -64,26 +64,32 @@
     <section class="skills">
         <ul>
             <li>
+                <i class="fa-solid fa-code"></i>
                 <h4>Programming & Algorithms</h4>
                 <p>Expertise in Python, C/C++, and JavaScript. Strong foundation in algorithms and data structures.</p>
             </li>
             <li>
+                <i class="fa-solid fa-laptop-code"></i>
                 <h4>Web Development</h4>
                 <p>Building responsive and modern websites with clean design and user experience in mind.</p>
             </li>
             <li>
+                 <i class="fa-solid fa-paint-brush"></i>
                 <h4>Graphic & UI Design</h4>
                 <p>Creating clean UI designs, graphics, and visual solutions that enhance user experience.</p>
             </li>
             <li>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h4>Research & Analysis</h4>
                 <p>Strong analytical skills to solve complex problems and optimize software solutions.</p>
             </li>
             <li>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h4>Networking & ICT</h4>
                 <p>Knowledge in computer networks, communication protocols, and smart ICT solutions.</p>
             </li>
             <li>
+                <i class="fa-solid fa-network-wired"></i>
                 <h4>Project Management</h4>
                 <p>Ability to plan, develop, and deliver projects effectively in a professional environment.</p>
             </li>
@@ -92,26 +98,48 @@
 
     <section class="statistiques">
     <ul>
-        <li>13</li><h5>Finished Projects</h5>
-        <li>2250</li><h5>Working hours</h5>
-        <li>100</li><h5>Online support</h5>
-        <li>4</li><h5>Happy Customers</h5>
+        <li>
+            <span class="stat-number">13</span>
+            <span class="stat-label">Finished Projects</span>
+        </li>
+        <li>
+           <span class="stat-number">2250</span>
+           <span class="stat-label">Working hours</span>
+        </li>
+        <li>
+            <span class="stat-number">100</span>
+            <span class="stat-label">Online support</span>
+        </li>
+        <li>
+            <span class="stat-number">4</span>
+            <span class="stat-label">Happy Customers</span>
+        </li>
     </ul>
     </section>
 
-    <section class="Buttom">
-        <h1>Ilyas Basit</h1>
-        <p>@2025 Ilyas Basit. All right reserved | Design and coded by <a href="http://127.0.0.1:5500/index.html">Ilyasse Basit</a></p>
+    <section class="footer">
+        <div class="footer-content">
+            <h1>Ilyasse.BASIT</h1>
+            <p>
+            &copy; 2025 Ilyasse Basit. All rights reserved | Design and coded by 
+            <a href="http://127.0.0.1:5500/index.html">Ilyasse Basit</a>
+            </p>
+            <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
     </section>
-</body>
-<script>
-    window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 25) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    });
-</script>
+    </body>
+    <script>
+        window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 25) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
 </html>
