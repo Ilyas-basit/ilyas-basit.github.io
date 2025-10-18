@@ -38,7 +38,7 @@ body {
     content: '';
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, #1d3557, #457b9d);
+    background: #1D3557;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -72,7 +72,7 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 50px 0;
-    height: 90vh; 
+    height: 100vh; 
 }
 
 .icons-wrapper {
@@ -101,7 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 3% 0px;
+  height: 90vh;
 }
 
 .contact-section h1 {
@@ -116,7 +116,7 @@ body {
   content: '';
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, #1d3557, #457b9d);
+  background: #1D3557;
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -165,10 +165,8 @@ body {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.05s ease;
 }
 
 .contact-form button:hover {
-  transform: translateY(-1.6px);
+  transform: translateY(-2px);
 }
-
