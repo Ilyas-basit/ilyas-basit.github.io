@@ -1,0 +1,172 @@
+body {
+  background: linear-gradient(180deg, #F1FAEE 0%, #E8F3F1 50%, #F1FAEE 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: #E63946; 
+  color: #fff; 
+}
+
+.navbar nav ul li a {
+  color: #1D3557;
+}
+
+.navbar nav ul li a::after {
+  background-color: #1d3557;
+}
+
+.navbar.scrolled {
+    transition: 0.1s;
+    color: #1D3557;
+    background-color: #F1FAEE;
+    box-shadow: 0 0.5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.social-title {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #1D3557;
+    margin-bottom: 40px;
+    font-weight: 625;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.social-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #1D3557;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+
+.social-icons .icon {
+  position: relative;
+  font-size: 30px;
+  color: #1D3557;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons .icon span {
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: 500;
+  color: #1D3557;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+    height: 100vh; 
+}
+
+.icons-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-icons .icon:hover {
+  transform: translateY(-5px);
+  color: #1d3557;
+}
+
+.social-icons .icon:hover span {
+  opacity: 1;
+}
+
+.contact-section {
+  background: #f1faee;
+  padding: 30px 10%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.contact-section h1 {
+  color: #1d3557;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 625;
+}
+
+.contact-section h1::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #1D3557;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #457b9d;
+  box-shadow: 0 0 5px rgba(69, 123, 157, 0.4);
+}
+
+.contact-form button {
+  background-color: #1d3557;
+  color: #fff;
+  border: none;
+  width: 30%;
+  font-family: 'poppins',serif;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my personal Website">
+    <title>Ilyasse BASIT</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <a style="text-decoration: none;" href="index.html"><h1 class="logo">Ilyasse<span style="color: #2196F3;">.</span>BASIT</h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html" ><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-school"></i>  Education</a></li>
+                <li><a href="skills.html"><i class="fa-solid fa-hammer"></i>  Skills</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i>  Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="debut">
+        <div class="debut-text">
+            <h1><span style="color: #457B9D; font-weight: 650; font-size: 55px;">Hi,</span> I'm <span style="letter-spacing: -5px;" class="logo">Ilyasse BASIT</span></h1>
+            <h2>Aspiring Engineer & Developer</h2>
+            <h3>Turning ideas into functional solutions</h3>
+            <div>
+                <a href="#" class="button">Download CV</a>
+                <a href="#about" class="button">Who Am I?</a>
+            </div>
+        </div>
+        <div class="debut-img">
+            <img src="images/logo.png" alt="">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="whoiam">
+            <h1>Who Am I?</h1>
+        </div>
+        <div class="about-paragraph">
+            <p>I,m a passionate engineering student who loves bringing ideas to life through code and creativity. From building small personal projects to exploring complex technical concepts, I find joy in understanding how things work and making them work better. My curiosity constantly drives me to learn new technologies, solve challenging problems, and transform innovative ideas into meaningful digital experiences. Whether it,s through clean, efficient code or thoughtful design, I,m always striving to create something useful, elegant, and impactful.</p>
+            <ul>
+                <li><span>Name : </span>Ilyasse BASIT</li>
+                <li><span>Adress : </span>Morocco, Marrakesh</li>
+                <li><span>Date of Birth : </span>15/02/2006</li>
+                <li><span>E-mail : </span><a target="_blank" style="text-decoration: none;" href="contact.html">basit.ilyasse@inpt.ac.ma</a></li>
+            </ul>
+            <a target="_blank" class="button" href="about.html">Read More</a>
+        </div>
+    </section>
+    
+    <section class="projects">
+        <div class="projects-title">
+            <h1>My Projects</h1>
+        </div>
+
+        <div class="projects-grid">
+            <a href="index.html" class="projects-card">
+                <img src="images/website.png" alt="Portfolio Website">
+                <h3 class="projects-card-title">Portfolio Website</h3>
+                <p class="projects-card-para">The website you're viewing right now.</p>
+            </a>
+
+            <a href="#" class="projects-card">
+                <img src="images/website.png" alt="Another Project">
+                <h3 class="projects-card-title">Portfolio Website</h3>
+                <p class="projects-card-para">The website you're viewing right now.</p>
+            </a>
+
+            <a href="#" class="projects-card">
+                <img src="images/website.png" alt="Third Project">
+                <h3 class="projects-card-title">Portfolio Website</h3>
+                <p class="projects-card-para">The website you're viewing right now.</p>
+            </a>
+            <a href="index.html" class="projects-card">
+                <img src="images/website.png" alt="Portfolio Website">
+                <h3 class="projects-card-title">Portfolio Website</h3>
+                <p class="projects-card-para">The website you're viewing right now.</p>
+            </a>
+
+            <a href="#" class="projects-card">
+                <img src="images/website.png" alt="Another Project">
+                <h3 class="projects-card-title">Portfolio Website</h3>
+                <p class="projects-card-para">The website you're viewing right now.</p>
+            </a>
+        </div>
+        <a href="skills.html" class="button">See More</a>
+    </section>
+
+    <section class="wanttoworkwithme">
+        <h1>Want to work together?</h1>
+        <a class="button" href="contact.html">Contact ME</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025. Coded and Designed by <a href="index.html" class="logo">Ilyasse<span style="color: #2196F3;">.</span>BASIT</a></p>
+    </footer>
+  
+    </body>
+    <script>
+        window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 25) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
+</html>
