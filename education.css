@@ -3,7 +3,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
+::selection {
+  background-color: #E63946; 
+  color: #fff; 
+}
 
 
 /* === Timeline principale === */
@@ -99,5 +102,5 @@ body {
 }
 
 .navbar nav ul li a::after {
-  background-color: #457B9D;
+  background-color: #1D3557;
 }
