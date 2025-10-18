@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #E63946; 
+  color: #fff; 
+}
+
 button, a {
   transition: all 0.3s ease;
 }
@@ -15,17 +20,9 @@ button, a {
 body {
     font-family: 'poppins', sans-serif;
     color: #0d1321;
-    background-color: #f1faee;
+    background: linear-gradient(180deg, #F1FAEE 0%, #E8F3F1 50%, #F1FAEE 100%) !important;
     line-height: 1.6;
     text-align: center;
-}
-
-hr{
-  margin: 20px auto;  
-  border: none;        
-  height: 2px;       
-  background-color: #ccc;
-  border-radius: 2px;  
 }
 
 .navbar {
@@ -46,20 +43,13 @@ hr{
     transition: 0.1s;
     color: #1D3557;
     background-color: #F1FAEE;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: solid 0.05px #1D3557;
 }
 
 .navbar .logo {
   font-size: 24px;
   font-weight: 600;
   display:block;
-}
-
-.navbar nav ul li a {
-  color: #dee2e6;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
 }
 
 .navbar nav ul li a::after {
@@ -69,8 +59,8 @@ hr{
   height: 2px;
   left: 0;
   bottom: -5px;
-  background-color: #457B9D;
-  transition: width 0.3s ease;
+  background-color: #1D3557;
+  transition: width 0.2s ease;
 }
 
 .navbar nav ul li a:hover::after {
@@ -80,6 +70,7 @@ hr{
 .logo {
     letter-spacing: -3px;
     border-bottom: none;
+    color: #1D3557;
 }
 
 .navbar ul {
@@ -90,18 +81,18 @@ hr{
 
 .navbar ul li a {
     text-decoration: none;
-    transition: 0.3s;
-    color: #F1FAEE;
+    transition: 0.2s;
+    color: #1D3557;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .navbar.scrolled ul li a {
     color: #1D3557;
 }
 
-.navbar ul li a:hover {
-    border-bottom: 3px solid #1D3557;
-    transition: 0.1s;
-}
 
 ol {
     justify-content: center;
@@ -109,253 +100,4 @@ ol {
     list-style: none;
 }
 
-.all-buttons {
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    background-color: #1D3557;
-    font-family: "poppins";
-    border-radius: 25px;
-    transition: 0.5s;
-}
-
-.all-buttons:hover{
-    background-color: #457B9D;
-}
-
-.intro{
-    height: 100vh;
-    background-image: linear-gradient(
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-    ),
-    url('image.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #F1FAEE;
-    padding: 20px 10%;
-
-    }
-
-.FirstPage {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 10%;
-
-}
-
-.FirstPage h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-.FirstPage h2 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #f1faee;
-}
-.FirstPage h3 {
-  font-size: 18px;
-  color: #a8dadc;
-  margin-bottom: 25px;
-}
-.biblio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px; 
-    padding: 80px 10%;
-    background: #f1faee;
-    height: 90vh;
-}
-#biblio-text {
-    flex: 1;
-    text-align: left;
-    max-width: 600px;
-
-}
-#biblio-text h3 {
-    color: #6c757d;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-#biblio-text h3 a {
-    color: #6c757d;
-}
-#biblio-text h2 {
-    color: #1d3557;
-    font-size: 36px;
-    font-weight: 700;
-    margin: 10px 0;
-    line-height: 25px;
-}
-#biblio-text p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  margin: 20px 0;
-}
-#biblio-text ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-#biblio-text ul li {
-  margin: 10px 0;
-  font-size: 15px;
-}
-
-#biblio-text hr {
-  border: none;
-  height: 1px;
-  background-color: #dee2e6;
-  margin: 20px 0;
-}
-#biblio-text h3:last-of-type {
-  margin-top: 30px;
-}
-
-#biblio-text .all-buttons {
-  margin: 10px 10px 0 0;
-}
-#biblio-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-
-}
-#biblio-img img {
-    width: 50%;
-    height: 50vh;
-    border-radius: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-}
-
-.info-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 30px; 
-  justify-items: start;
-  text-align: left;
-  margin: 20px auto;
-  max-width: 600px; 
-}
-
-.info-list li {
-  font-size: 16px;
-  color: #333;
-}
-
-.skills ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 30px; 
-  list-style: none;
-  padding: 30px 13%;
-  text-align: left;
-}
-
-.skills li {
-  padding: 20px;
-  border-radius: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skills li i {
-  font-size: 40px;
-  color: #1D3557;
-  margin-bottom: 15px;
-}
-
-.skills li:hover {
-  transform: translateY(-0.3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.skills li h4  {
-  color: #0d1321;
-}
-
-.statistiques {
-  background-color: #fff;
-  padding: 50px 10%;
-}
-
-.statistiques ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  list-style: none;
-  text-align: center;
-}
-
-.statistiques ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.statistiques .stat-number {
-  font-size: 70px;
-  font-weight: 600;
-  color: #1D3557;
-}
-
-.statistiques .stat-label {
-  font-size: 18px;
-  font-weight: 500;
-  color: #555;
-  margin-top: 10px;
-}
-
-.footer {
-  background-color: #1D3557;
-  color: #f1faee;
-  padding: 40px 10%;
-  text-align: center;
-}
-
-.footer h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-    letter-spacing: -3px;
-
-}
-
-.footer p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.footer a {
-  color: #f1faee;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #E63946;
-}
-
-.footer-social a {
-  margin: 0 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.footer-social a:hover {
-  color: #E63946;
-  transform: scale(1.2);
-}
 
