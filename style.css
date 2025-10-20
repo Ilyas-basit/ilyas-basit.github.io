@@ -249,7 +249,7 @@ ol {
 }
 
 .projects-grid {
-  padding: 0 10%;
+  padding: 0 10% 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
