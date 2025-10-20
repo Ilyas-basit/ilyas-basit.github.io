@@ -245,6 +245,7 @@ ol {
 
 .projects {
   padding: 60px 0;
+  width: 100vw;
 }
 
 .projects-grid {
