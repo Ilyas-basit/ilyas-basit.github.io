@@ -4,7 +4,10 @@ html {
 
 * {
   box-sizing: border-box;
-outline: solid 1px red;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 ::selection {
