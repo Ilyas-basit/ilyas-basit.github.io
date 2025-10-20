@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ::selection {
   background-color: #E63946; 
   color: #fff; 
