@@ -6,10 +6,6 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 ::selection {
   background-color: #E63946; 
   color: #fff; 
@@ -250,7 +246,6 @@ ol {
 
 .projects {
   padding: 60px 0;
- 
 }
 
 .projects-grid {
@@ -349,3 +344,4 @@ ol {
     padding: 0 8%;
   }
 }
+
