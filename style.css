@@ -379,7 +379,7 @@ ol {
     height: 35vh;
   }
   .whoiam h1 {
-    font-size: 60px;
+    font-size: 45px;
     padding: 20vh 7% 0 7%;
   }
   .about-paragraph {
@@ -415,3 +415,4 @@ ol {
     margin-bottom: 30px;
   }
 }
+
