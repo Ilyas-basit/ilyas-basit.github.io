@@ -341,17 +341,15 @@ ol {
   font-weight: 600;
 }
 
+
 @media (max-width: 768px) {
-  .navbar {
+.navbar {
     padding: 3px 7%;
   }
   .navbar ul {
     gap: 15px;
     align-items: center;
   }
-}
-
-@media (max-width: 767px) {
 .debut {
     flex-direction: column;
   }
@@ -379,8 +377,8 @@ ol {
     height: 35vh;
   }
   .whoiam h1 {
-    font-size: 45px;
-    padding: 20vh 7% 0 7%;
+    font-size: 50px;
+    padding: 21vh 7% 0 7%;
   }
   .about-paragraph {
     padding: 25px 7% 0 7%;
@@ -415,6 +413,3 @@ ol {
     margin-bottom: 30px;
   }
 }
-
-
-
