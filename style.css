@@ -390,8 +390,9 @@ ol {
     row-gap: 12px;
     max-width: 600px;
   }
+
   .projects {
-    padding: 100px 0 40px 0;
+    padding: 25vh 0 40px 0;
   }
   .projects-title h1 {
     padding: 0 7% 0 7%;
