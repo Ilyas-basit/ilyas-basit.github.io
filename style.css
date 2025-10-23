@@ -380,6 +380,7 @@ ol {
   }
   .whoiam h1 {
     font-size: 45px;
+    color: red;
     padding: 20vh 7% 0 7%;
   }
   .about-paragraph {
@@ -415,4 +416,5 @@ ol {
     margin-bottom: 30px;
   }
 }
+
 
