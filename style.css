@@ -351,7 +351,7 @@ ol {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
 .debut {
     flex-direction: column;
   }
@@ -380,7 +380,6 @@ ol {
   }
   .whoiam h1 {
     font-size: 45px;
-    color: red;
     padding: 20vh 7% 0 7%;
   }
   .about-paragraph {
@@ -416,5 +415,6 @@ ol {
     margin-bottom: 30px;
   }
 }
+
 
 
