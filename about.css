@@ -43,6 +43,10 @@ body {
     background-color: #F1FAEE;
 }
 
+.navbar ul li a {
+    color: #F1FAEE;
+}
+
 .navbar.scrolled ul li a {
     color: #1d3557;
 }
