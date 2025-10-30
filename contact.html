@@ -17,14 +17,15 @@
     <header class="navbar">
             <a style="text-decoration: none;" href="index.html"><h1 class="logo">Ilyasse<span style="color: #2196F3;">.</span>BASIT</h1></a></a>
             <nav>
-                <ul>
-                    <li><a href="index.html" ><i class="fa-solid fa-house"></i>  Home</a></li>                     
-                    <li><a href="about.html"><i class="fa-solid fa-user"></i>  About</a></li>
-                    <li><a href="education.html"><i class="fa-solid fa-school"></i>  Education</a></li>
-                    <li><a href="skills.html"><i class="fa-solid fa-hammer"></i>  Skills</a></li>
-                    <li><a href="contact.html"><i class="fa-solid fa-phone"></i>  Contact Me</a></li>
+            <ul class="menu">
+                <li><a href="index.html" ><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-school"></i>  Education</a></li>
+                <li><a href="skills.html"><i class="fa-solid fa-hammer"></i>  Skills</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i>  Contact Me</a></li>
             </ul>
-        </nav>
+            </nav>
+            <button class="menu-btn" id="menuBtn">☰</button>
     </header>
     <section class="social-icons">
         <h2 class="social-title">Contact Me</h2>
@@ -52,17 +53,6 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
-
+    <script src="script.js"></script>
 </body>
-    <script>
-        window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 25) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        });
-    </script>
-
 </html>

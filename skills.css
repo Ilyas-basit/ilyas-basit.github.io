@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(180deg, #F1FAEE 0%, #E8F3F1 50%, #F1FAEE 100%);
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: #E63946; 
+  color: #fff; 
+}
+
+.logo {
+    color: #F1FAEE;
+}
+
+.navbar {
+    background-color: #1d3557;
+}
+
+.navbar nav ul li a {
+  color: #F1FAEE;
+}
+
+.navbar nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #F1FAEE;
+  transition: width 0.2s ease;
+}
+
+.navbar.scrolled ul li a {
+    color: #F1FAEE;
+}
+
+/* Button Menu */
+.menu-btn {
+  color: #F1FAEE;
+}
+
+.skills {
+    height: auto;
+}
+
+.title-skills {
+    background-color: #1d3557;
+    height: 50vh;
+    width: 100%;
+}
+
+.title-skills h1 {
+    color: #F1FAEE;
+    font-size: 90px;
+    font-weight: 550;
+    padding: 30vh 0 10% 10%;
+    text-align: left;
+}
+
+.card-skills {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    align-items: center;
+    height: auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    color: #F1FAEE;
+    background-color: #1d3557;
+    height: 250px;
+    transition: all 0.3s ease;
+}
+
+.card-python:hover {
+    background: linear-gradient(to top, #457B9D 80%, #F1FAEE 80%);
+}
+.card-js:hover {
+    background: linear-gradient(to top, #457B9D 80%, #F1FAEE 80%);
+}
+.card-c:hover {
+    background: linear-gradient(to top, #457B9D 80%, #F1FAEE 80%);
+}
+.card-react:hover {
+    background: linear-gradient(to top, #457B9D 10%, #F1FAEE 90%);
+}
+.card-html:hover {
+    background: linear-gradient(to top, #457B9D 95%, #F1FAEE 5%);
+}
+.card-css:hover {
+    background: linear-gradient(to top, #457B9D 85%, #F1FAEE 15%);
+}
+
+.card i {
+    font-size: 90px;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1D3557;
+        color: #F1FAEE;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        font-size: larger;
+        gap: 21px;
+    }
+    .navbar nav ul li a {
+        color: #F1FAEE;
+    }
+  .navbar nav ul li a {
+    color: #1D3557;
+  }
+  .navbar nav ul li a::after {
+    background-color: #1D3557;
+    transition: width 0.8s ease;
+    }
+}

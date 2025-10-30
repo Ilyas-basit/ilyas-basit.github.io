@@ -32,12 +32,14 @@ body {
   overflow-x: hidden;
 }
 
+/* Button Menu */
 .menu-btn {
   display: none;
   background: none;
   border: none;
-  font-size: 28px;
-  cursor: pointer;
+  font-size: 42px;
+  z-index: 1001;
+  transition: all 0.2s ease;
 }
 
 .navbar {
@@ -46,9 +48,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   transition: 0.3s;
@@ -130,6 +131,7 @@ ol {
   height: auto;
 }
 
+
 .debut-text {
   text-align: left;
   background-color: #A8DADC;
@@ -200,7 +202,6 @@ ol {
   height: 100vh;
   display: block;
   text-align: left;
-
 }
 
 .whoiam {
@@ -341,10 +342,56 @@ ol {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #A8DADC;
+    color: #1D3557;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    font-size: larger;
+    gap: 21px;
+  }
+
+  .navbar .menu li a i {
+    padding-right: 3px;
+  }
+
+  .navbar .menu.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 3px 7%;
+  }
+  .navbar nav ul li a::after {
+    background-color: #1D3557;
+    transition: width 0.8s ease;
+  }
+  .navbar ul {
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+
 
 @media (max-width: 768px) {
-.navbar {
+  .navbar {
     padding: 3px 7%;
+  }
+  .navbar nav ul li a::after {
+    background-color: #1D3557;
+    transition: width 0.8s ease;
   }
   .navbar ul {
     gap: 15px;

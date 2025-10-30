@@ -17,9 +17,6 @@ body {
     background-color: #1d3557;
 }
 
-.navbar nav ul li a {
-  color: #F1FAEE;
-}
 
 .navbar nav ul li a::after {
   content: '';
@@ -32,9 +29,36 @@ body {
   transition: width 0.2s ease;
 }
 
-.navbar.scrolled ul li a {
-    color: #F1FAEE;
+/* Button Menu */
+.menu-btn {
+  color: #F1FAEE;
 }
+
+.navbar {
+    background-color: #1d3557;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #F1FAEE;
+}
+
+.navbar.scrolled ul li a {
+    color: #1d3557;
+}
+
+.navbar.scrolled .logo {
+    color: #1d3557;
+}
+
+.menu-btn {
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .menu-btn {
+    color: #1d3557;
+}
+
 
 .aboutme {
     height: 100vh;
@@ -113,6 +137,31 @@ body {
 }
 
 @media (max-width: 768px) {
+    
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1D3557;
+        color: #F1FAEE;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        font-size: larger;
+        gap: 21px;
+    }
+    .navbar nav ul li a {
+        color: #F1FAEE;
+    }
+    .navbar nav ul li a::after {
+        background-color: #1D3557;
+        transition: width 0.8s ease;
+    }
+    .menu {
+        color: #1D3557;
+    }
     .navbar {
         padding: 16px 7%;
     }
@@ -141,12 +190,24 @@ body {
 
     .title-aboutme h1 {
         padding: 23vh 7% 0 7%;
-        font-size: 75px;
+        font-size: 3.1rem;
     }
 }
+
 @media (max-width: 446px) {
     .title-aboutme h1 {
         padding: 27vh 7% 0 7%;
         font-size: 50px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+

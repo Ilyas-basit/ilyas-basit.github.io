@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(180deg, #F1FAEE 0%, #E8F3F1 50%, #F1FAEE 100%);
+  background: linear-gradient(180deg, #fff 0%, #E8F3F1 50%, #fff 100%);
   font-family: "Poppins", sans-serif;
 }
 
@@ -8,8 +8,6 @@ body {
   color: #fff; 
 }
 
-
-/* === Timeline principale === */
 .timeline {
   position: relative;
   max-width: 1000px;
@@ -17,7 +15,7 @@ body {
   padding: 20px 0;
 }
 
-/* === Ligne verticale === */
+/*Ligne verticale*/
 .timeline::after {
   content: '';
   position: fixed;
@@ -29,7 +27,7 @@ body {
   margin-left: -2px;
 }
 
-/* === Boîtes gauche / droite === */
+/*Boîtes gauche / droite*/
 .container {
   padding: 10px 40px;
   position: relative;
@@ -37,7 +35,7 @@ body {
   width: 50%;
 }
 
-/* === Les petits cercles === */
+/*Les petits cercles*/
 .container::after {
   content: '';
   position: absolute;
@@ -51,31 +49,36 @@ body {
   z-index: 1;
 }
 
-/* === Position gauche === */
+/*Position gauche*/
 .left {
   left: 0;
 }
 
-/* === Position droite === */
+/*Position droite*/
 .right {
   left: 50%;
 }
 
-/* === Correction du cercle à droite === */
+/*Correction du cercle à droite*/
 .right::after {
   left: -10px;
 }
 
-/* === Boîtes de contenu === */
+/*Boîtes de contenu*/
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #fff;
   position: relative;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.1s ease;
 }
 
-/* === Ajustements visuels === */
+.content h1, .content h2, .content h3 {
+  color: #1D3557;
+}
+
+/*Ajustements visuels*/
 .left .content {
   margin-left: 30px;
   text-align: left;
@@ -85,16 +88,33 @@ body {
   text-align: right;
 }
 
-
 .timeline::after {
-  background: linear-gradient(#1D3557, #457B9D);
+  background: #1D3557;
   box-shadow: 0 0 15px rgba(69,123,157,0.5);
 }
 
 .content:hover {
-  transform: scale(1.03);
+  transform: scale(1.009);
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
+}
+
+.content a {
+  opacity: 0;
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 25px;
+}
+
+.content:hover a {
+  opacity: 1;
+  border: 1.5px solid #1D3557;
+}
+
+.content a:hover {
+  background-color: #1D3557;
+  color: #fff;
 }
 
 .navbar nav ul li a {
